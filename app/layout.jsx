@@ -1,37 +1,25 @@
-import { Poppins } from 'next/font/google'
+import { Mulish } from 'next/font/google'
 import './globals.css'
-import Nav from '@/components/Nav'
+import Navbar from '@/components/Navbar'
 import Footer from '@/components/Footer'
 
-const poppins500 = Poppins({ 
+const mulish = Mulish({
   subsets: ['latin'],
-  weight: ['500'], 
-})
-
-const poppins600 = Poppins({ 
-  subsets: ['latin'],
-  weight: ['600'],
+  weights: [400, 700],
 })
 
 export const metadata = {
-  title: {
-    template: '%s | MediTechLabs',
-    default: 'MediTechLabs',
-  },
+  title: 'MediTechLabs',
   description: 'MediTechLabs',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>
-        <div className={poppins500.className}>
-          <Nav />
-        </div>
-        <div className={poppins600.className}>
-          {children}
-          <Footer />
-        </div>
+      <body className={mulish.className}>
+        <Navbar />
+        {children}
+        <Footer />
       </body>
     </html>
   )

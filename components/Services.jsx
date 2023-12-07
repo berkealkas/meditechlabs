@@ -1,30 +1,50 @@
-import { BsClipboard2HeartFill } from "react-icons/bs";
-import { FaStethoscope } from "react-icons/fa6";
-import { FaMagnifyingGlassChart } from "react-icons/fa6";
-
 export default function Services() {
     return (
-        <section className="bg-white rounded-3xl min-h-[95vh]">
-            <div className="container mx-auto">
-                <div className="flex flex-col items-center justify-center">
-                    <div className="flex flex-col items-center justify-center text-sky-900 mt-20 gap-y-10">
-                        <h1 className="text-6xl">Ürün ve Hizmetler</h1>
-                        <p className="text-3xl text-center mx-52 leading-relaxed">İşbirliği yaptığımız sağlık kuruluşlarına, hastalara ve sağlık profesyonellerine yönelik çözümler geliştirerek sağlık hizmetlerinin kalitesini artırmayı hedefliyoruz.</p>
+        <section className="min-h-screen mx-10">
+            <div className="container mx-auto my-28">
+                <div className="flex flex-col items-center justify-center gap-y-7">
+                    <h1 className="text-4xl font-bold text-center">
+                        Yapay Zeka ile Sağlık Hizmetlerinizi Birlikte Mükemmelleştirelim
+                    </h1>
+                    <div className="border-b-2 border-black w-40"/>
+                </div>
+                <div className="mt-20 text-center md:text-start space-y-20">
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+                        <img className="w-full md:w-1/2" src="/services1.svg" alt="services"/>
+                        <div className="flex flex-col gap-y-7 items-center justify-center md:items-start">
+                            <h1 className="text-4xl font-bold">
+                                Sağlık Alanına Özel Eğitilmiş Dil Modelleri
+                            </h1>
+                            <div className="border-b-2 border-black w-20"/>
+                            <p className="text-gray-500 leading-loose">
+                                MediTechLabs olarak sağlık alanında yüksek isabetli sonuçlar alabilmek adına, sağlık kaynaklarından oluşturduğumuz veri seti ile modellerimizi eğitiyoruz. Böylece çözümlerimizi faaliyetlerinize entegre ederken, tıbbi doğruluktan ve hizmet kalitesinden taviz vermezsiniz.
+                            </p>
+                        </div>
                     </div>
-                    <div className="grid grid-cols-3 items-center justify-items-center mt-20 gap-x-10">
-                        <div className="flex flex-col items-center justify-center gap-y-8 bg-sky-900 text-white rounded-xl w-full h-72 px-5">
-                            <BsClipboard2HeartFill className="text-5xl"/>
-                            <h1 className="text-3xl text-center">Tanı Sistemi</h1>
+                    <div className="flex md:flex-row flex-col-reverse items-center justify-center gap-10">
+                        <div className="flex flex-col gap-y-7 items-center justify-center md:items-start">
+                            <h1 className="text-4xl font-bold">
+                                Hafif ve Ölçeklenebilir Sistemler
+                            </h1>
+                            <div className="border-b-2 border-black w-20"/>
+                            <p className="text-gray-500 leading-loose">
+                                Ürünlerimiz, kurumunuzun teknik alt yapısına yük olmayacak ve iş süreçlerinizi aksatmayacak şekilde optimize edilmiştir. Bu sayede, düşük işlem gücü ile yüsek performansalara ulaşabilirsiniz. Ürünlerimizin modüler yapısı sayesinde, ihtiyaçlarınız artıkça sistem taleplerinizi karşılayacak şekilde ölçeklenecektir.
+                            </p>
                         </div>
-                        <div className="flex flex-col items-center justify-center gap-y-8 bg-sky-900 text-white rounded-xl w-full h-72 px-5">
-                            <FaStethoscope className="text-5xl"/>
-                            <h1 className="text-3xl text-center">Sağlık Danışmanı</h1>
-                        </div>
-                        <div className="flex flex-col items-center justify-center gap-y-8 bg-sky-900 text-white rounded-xl w-full h-72 px-5">
-                            <FaMagnifyingGlassChart className="text-5xl"/>
-                            <h1 className="text-3xl text-center">Analiz ve Optimizasyon</h1>
-                        </div>
+                        <img className="w-full md:w-1/2" src="/services2.svg" alt="services"/>
                     </div>
+                    <div className="flex flex-col md:flex-row items-center justify-center gap-10">
+                        <img className="w-full md:w-1/2" src="/services3.svg" alt="services"/>
+                        <div className="flex flex-col gap-y-7 items-center justify-center md:items-start">
+                            <h1 className="text-4xl font-bold">
+                                Yapay Zeka Alanında Partneriniz
+                            </h1>
+                            <div className="border-b-2 border-black w-20"/>
+                            <p className="text-gray-500 leading-loose">
+                                MediTechLabs olarak kurumunuzun iş süreçlerini yeni çağa uygun hale getirmenizde yanınızdayız. Çözümlerimiz ile süreçlerinizi daha verimli, daha kaliteli ve daha erişilebilir hale getirmek için hazırız.
+                            </p>
+                        </div>
+                    </div>                    
                 </div>
             </div>
         </section>
